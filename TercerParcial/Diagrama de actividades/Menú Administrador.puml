@@ -1,0 +1,21 @@
+@startuml
+start 
+#palegreen:Menú Administrador;
+if (agregar producto y) then (Yes)
+  :Confirmar;
+elseif (Modificar producto) then (Yes)
+  :Confirmar;
+elseif (Eliminar producto ) then (Yes)
+  :Confirmar;
+elseif (Agregar usuario) then (Yes)
+  :Confirmar;
+elseif (Ver inventario) then (Yes)
+  :Confirmar;
+else (Salir)
+  :Regresa a menu;
+endif
+stop
+@enduml
+
+
+

@@ -1,0 +1,10 @@
+@startuml
+#palegreen:Login;
+:Ingresamos usuario;
+if (    Verifica si el ususario existe) then
+  :Error el usuario no existe;
+  stop
+endif
+:Limpia los campos;
+
+@enduml

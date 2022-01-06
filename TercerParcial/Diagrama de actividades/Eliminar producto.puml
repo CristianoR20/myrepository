@@ -1,0 +1,10 @@
+@startuml
+#palegreen:Eliminar producto;
+if (Si el código existe) then
+  :Si no exite el código, error;
+  stop
+endif
+:Se Muestra el producto a eliminar;
+:Cerrar la venta P5, y regresar a la pantalla P2;
+
+@enduml

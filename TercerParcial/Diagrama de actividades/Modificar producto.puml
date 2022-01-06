@@ -1,0 +1,13 @@
+@startuml
+#palegreen:Modificar producto;
+if (Si el código existe) then
+  :Si no exite el código, error;
+  stop
+endif
+:Se Muestra los datos a modificar;
+:Se guardan los datos;
+:Cerrar la venta P2, y regresar a la pantalla P1;
+
+@enduml
+
+
