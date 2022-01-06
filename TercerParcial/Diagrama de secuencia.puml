@@ -1,0 +1,22 @@
+
+@startuml
+
+actor Autor
+
+
+entity entityy
+control control
+database BD
+Autor-->entityy : ingresa usuario
+BD-->control: obtener usuario
+entityy-->control :verifica usuario
+control-->Autor : usuario incorrecto
+Autor-->entityy : ingresa contraseña
+BD-->control : obtener contraseña
+entityy-->control :verifica contraseña
+control-->Autor : contraseña incorrecta
+control-->BD :reporte de ventas
+Autor-->BD : insertar datos
+Autor-->BD : modificar datos
+Autor-->BD : eliminar datos
+@enduml
