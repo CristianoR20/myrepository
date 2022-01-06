@@ -1,0 +1,8 @@
+@startuml
+#palegreen:Agregar producto;
+
+:Se Muestra los campos para agrgar;
+:Se guardan los datos;
+:Cerrar la venta P3, y regresar a la pantalla P2;
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+#palegreen:Agregar usuario;
+
+:Ingresar el nombre del usuario;
+:Ingresar su apellido;
+:Cerrar la venta P2, y regresar a la pantalla P1;
+:Ingresar la contraseña;
+:Elige el tipo de usuario (administrador o vendedor);
+:Oprimir el botón Agregar;
+:ok;
+stop
+
+@enduml

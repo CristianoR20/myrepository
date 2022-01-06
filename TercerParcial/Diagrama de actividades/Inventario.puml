@@ -1,0 +1,10 @@
+@startuml
+#palegreen:Mostrar inventario;
+:Oprimir el boton mostrar inventario;
+if (Ingresamos código del producto) then
+  :Error el usuario no existe;
+  stop
+endif
+:Se muestra la tabla;
+:Presionar el botón salir para regresar a la ventana P2 .;
+@enduml

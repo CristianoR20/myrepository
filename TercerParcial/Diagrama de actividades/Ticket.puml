@@ -1,0 +1,7 @@
+@startuml
+#palegreen:Ticket;
+:Oprimimos el boton mostrar ticket;
+:Se muestra los detalles de la venta;
+stop
+:salir;
+@enduml
