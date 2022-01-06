@@ -1,0 +1,163 @@
+@startuml
+
+class bd.conexion #sky{
+-host:String
+-bd:String
+-usr:STring
+-pasw:String
+
++Connection conectar_base()
+
+
+}
+
+class entity.Usuario #green{
+-nombre_usuario:String
+-contraseña:String
+-tipo_usuario
++getnombre_usuario()
++getcontraseña()
++gettipo_usuario()
+
+}
+class entity.Ventas #green{
+
+-fecha:String
+-producto:Producto
+-cantidad:int
++getfecha()
++getproducto()
++getcantidad()
+
+}
+class entity.Producto #green{
+codigo:String
+-nombre:String
+-existencia:int
+-descripcion:String
+-precioc: double
+-preciov: double
+
++getnombre()
++getcodigo()
++getexistencia()
++getdescripcion()
++getprecioc()
++getpreciov
+
+}
+
+
+
+interface model.IUsuarioModel #skyblue{
+-usuario: Usuario
++List<Usuario> obtenerUsuarios()
++Usuario obtenerUsuario()
++void actualizarUsuario(Usuario)
++void eliminarUsuario(int id)
++void crearUsuario(Usuario)
+
+}
+
+interface model.IUsuarioModel<|--interface model.UsuarioModelImplements
+
+
+
+
+interface model.IVentasModel #skyblue{
+
++void generarventa()
+
+}
+interface model.IProductoModel #skyblue{
+-codigo:String
+-nombre:String
+-existencia:int
+-descripcion:String
+-precioc: double
+-preciov: double
+
++void agregarProducto()
++void modificarProducto()
++ void eliminarProducto()
+
+}
+
+interface model.UsuarioModelImplements #green{
++List<Usuario> obtenerUsuarios()
++Usuario obtenerUsuario()
++void actualizarUsuario(Usuario)
++void eliminarUsuario(int id)
++void crearUsuario(Usuario)
+}
+
+
+
+
+interface model.VentasModelImplements #green{
++void generarventa()
+}
+interface model.ProductosModelImplements #green{
++void agregarProducto()
++void modificarProducto()
++ void eliminarProducto()
+}
+
+class controller.Usuariocontroller #yellow{
+
+}
+class controller.Ventascontroller #yellow{
+
+}
+class controller.Productoscontroller #yellow{
+
+}
+class controller.ReporteProductoscontroller #yellow{
+
+}
+class controller.ReporteVentascontroller #yellow{
+
+}
+
+class view.Principal #pink {
+
+}
+
+class view.Login #pink {
+-Usuario:string
+-Contraseña:string
+
++verificar_usuario()
+} 
+class view.Punto_venta #pink {
+-codigo:String
++void busca_codigo()
++void muestra_datos()
+}
+class view.Insertar_Producto #pink {
+-codigo:String
+-nombre:String
+-existencia:int
+-descripcion:String
+-precioc: double
+-preciov: double
+
++Limpiarcampos()
+}
+
+class view.Consultar #pink {
+-codigo:String
+
+}
+class view.Modificar #pink {
+-codigo:String
+
+
+}
+
+
+
+
+
+
+@enduml
